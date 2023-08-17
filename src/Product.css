@@ -1,0 +1,127 @@
+ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-right: 2rem;
+    
+}
+
+ul li{
+    padding: 1rem;
+    font-size: 31px;
+    
+   
+}
+
+nav ul a {
+    text-decoration: none;
+    color:black;
+    
+}
+
+nav ul a:hover{
+    color: rgb(84, 76, 76);
+}
+
+
+nav{
+    background-color: rgb(110, 110, 158);
+    font-family: 'Courgette', cursive;
+    height: 4rem;
+}
+
+nav h2{
+    position: absolute;
+    z-index: 2;
+     color:rgba(22, 15, 42, 0.831);
+    font-family:'Courgette', cursive;
+      left:34px;
+       top: 13px;
+}
+
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+.logos-slide img{
+    height: 100px;
+    margin: 0 40px;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    background: rgb(255, 253, 253);
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.logos:before, .logos:after{
+    position: absolute;
+    top:0;
+    width: 250px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+    
+}
+
+.logos:before{
+    left:0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+
+}
+
+.logos:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.card-img-top {
+    height: 16rem;
+    width: 12rem;
+    margin-left: 31px;
+
+  }
+.card-body{
+    /* border: 2px solid black; */
+    width: 15rem;
+    height: 9rem;
+}
+.card{
+    
+    width: 16rem;
+}
+
+.card-text{
+    position:absolute;
+    left: 1rem;
+    top: 22.6rem;
+    
+}
+.btn {
+    position: absolute;
+    right: 1rem;
+    top: 22rem;
+}
+
+
+
